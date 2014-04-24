@@ -117,7 +117,7 @@
 									<input name="eid" value= ' . $row['perf_id'] . ' type="hidden">
 									<input value="Attend Event" type="submit">
 								</form>
-								<form action="approveeventprocess.php" method="post">
+								<form action="approveperformanceprocess.php" method="post">
 									<input name="eid" value= ' . $row['perf_id'] . ' type="hidden">
 									<input value="Approve Event" type="submit">
 								</form>

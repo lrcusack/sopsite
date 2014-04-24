@@ -29,6 +29,6 @@
 					
             
             // */
-            header('Location: singerhome.html');
+            header('Location: events.php');
               
 	?>
