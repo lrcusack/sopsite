@@ -95,10 +95,10 @@
 			<?php 
 				$timenow = time();
 				//query all future approved events
-				$query1 = "SELECT * FROM performance WHERE timestamp>$timenow AND approved=0 ORDER BY 'timestamp';";
+				$query1 = "SELECT (perf_name,timestamp,location,description,perf_id) FROM performance WHERE timestamp>$timenow AND approved=0 EXCEPT SELECT (perf_name,timestamp,location,description,perf_id) FROM performance, attending WHERE performance.perf_id = attending.perf_id AND attending.singerID=$currentID ORDER BY 'timestamp';";
 				$result1 = mysql_query($query1);
 				if(mysql_num_rows($result1)==0){
-					echo "No upcoming events, stay tuned for more to come!";
+					echo "No more upcoming events, stay tuned for more to come!";
 					exit;
 				}
 				while ($row = mysql_fetch_assoc($result1)) {
