@@ -1,3 +1,5 @@
+
+
 <?php 
 	 session_start(); //continue session
     $currentUser=$_SESSION['username'];
