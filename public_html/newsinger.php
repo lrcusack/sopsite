@@ -70,12 +70,11 @@
           <a class="navbar-brand" href="./index.html">Sons of Pitch</a>
         </div>
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="http://www.gwu.edu/~sop/">About us</a></li>
-            <li><a href="http://www.gwu.edu/~sop/">Performance Schedule</a></li>
-            <li><a href="./contactus.html">Contact us</a></li>
-            <li><a href="currentsons.html">Current Sons</a></li>
-            <li><a href="http://www.gwu.edu/~sop/sons.html">SOP Alumni</a></li>
+          <ul class="nav navbar-nav">		
+           <li><a href="aboutus.php">About us</a></li>
+           <li><a href="events.php">Performance Schedule</a></li>
+           <li><a href="./contactus.php">Contact us</a></li>
+           <li><a href="currentsons.php">Current Sons</a></li>
               </ul>
             </li>
           </ul>

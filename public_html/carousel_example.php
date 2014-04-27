@@ -72,9 +72,9 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-             <li><a href="aboutus.html">About us</a></li>
+            <li><a href="aboutus.php">About us</a></li>
            <li><a href="events.php">Performance Schedule</a></li>
-           <li><a href="./contactus.html">Contact us</a></li>
+           <li><a href="./contactus.php">Contact us</a></li>
            <li><a href="currentsons.php">Current Sons</a></li>
               </ul>
             </li>
