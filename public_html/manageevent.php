@@ -98,59 +98,35 @@
 				$result1 = mysql_query($query1);
 				$query2 = "SELECT * FROM performance WHERE perf_id = $eid;";
 				$result2 = mysql_query($query2);
-				$row = mysql_fetch_assoc($result2);
-				$datetime = date('m/d/Y g:ia',$row['timestamp']);
-				echo '<p><h2>'. $row['perf_name'] . '</h2> ' . '
-								<br>
+				$row2 = mysql_fetch_assoc($result2);
+				$datetime = date('m/d/Y g:ia',$row2['timestamp']);
+				echo '<h2>'. $row2['perf_name'] . '</h2><p> ' . '
+								<h3>Details</h3>
 								' . $datetime . '
 								<br>
-								' . $row['location'] . '
+								' . $row2['location'] . '
 								<br>
-								Description: ' . $row['description'] . '</p>';
-								
-				if(mysql_num_rows($result1)==0){
-					echo "No more upcoming events, stay tuned for more to come!";
-					exit;
-				}
+								' . $row2['description'] . '</p>
+								<p><h3>Attending</h3>
+								';
 				
-				/*
+				
 				while ($row = mysql_fetch_assoc($result1)) {
 					//eventually make it so events only appear if not already attending
-					$datetime = date('m/d/Y g:ia',$row['timestamp']);
-					if($isadmin){$manageform = '<form action="manageevent.php" method="post">
-									<input name="eid" value= ' . $row['perf_id'] . ' type="hidden">
-									<input value="Manage Event" type="submit">
-								</form>';
-								}
-					echo '<div class="panel panel-default">
-							<div class="panel-body">
-								'. $row['perf_name'] . ' ' . $manageform . '
-								<br>
-								' . $datetime . '
-								<br>
-								' . $row['location'] . '
-								<br>
-								Description: ' . $row['description'] . '
-								<form action="attendeventprocess.php" method="post">
-									<input name="eid" value= ' . $row['perf_id'] . ' type="hidden">
-									<input value="Attend Event" type="submit">
-								</form>
-								<form action="approveperformanceprocess.php" method="post">
-									<input name="eid" value= ' . $row['perf_id'] . ' type="hidden">
-									<input value="Approve Event" type="submit">
-								</form>
-							</div>
-						  </div>';
+					echo $row['singer_name'];
 				}
-				*/
-				echo '<form action="attendeventprocess.php" method="post">
-									<input name="eid" value= ' . $row['perf_id'] . ' type="hidden">
+				
+				echo '</p><p><h3>Manage</h3>
+				
+						<form action="attendeventprocess.php" method="post">
+									<input name="eid" value= ' . $eid . ' type="hidden">
 									<input value="Attend Event" type="submit">
 								</form>
 						<form action="approveperformanceprocess.php" method="post">
 									<input name="eid" value= ' . $eid . ' type="hidden">
 									<input value="Approve Event" type="submit">
-								</form>';
+								</form>
+								</p>';
 			?>
 			
 		</p>

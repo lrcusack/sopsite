@@ -122,16 +122,17 @@
 					}
 					echo '<div class="panel panel-default">
 							<div class="panel-body">
-								'. $row['perf_name'] . '
+								<h3>'. $row['perf_name'] . '</h3>
 								<br>
 								' . $datetime . '
 								<br>
 								' . $row['location'] . '
 								<br>
-								Description: ' . $row['description'] . 
+								' . $row['description'] . 
 								 ' ' . $myform . '
 							</div>
 						  </div>';
+					
 				}
 			?>
 			
