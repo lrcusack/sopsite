@@ -2,7 +2,7 @@
 <?php session_start(); //continue session
     $currentUser=$_SESSION['username'];
     $currentID=$_SESSION['currentUserID'];
-    if(!$currentID){header("Location: index.html");exit;}
+    //if(!$currentID){header("Location: index.html");exit;}
     //connect to database
     $conn = mysql_connect("localhost","lrcusack","S3Cr3T.228");
     if (!$conn)
@@ -102,7 +102,7 @@
 				</form></p>
 		<h2>New to SOP?</h2>
 		<p>
-			<a class="btn btn-lg btn-primary" href="singersignup.html" role="button">Sign up here! »</a>
+			<a class="btn btn-lg btn-primary" href="singersignup.html" role="button">Sign up here! </a>
 		</p>
         <p></p>
       </div>

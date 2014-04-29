@@ -98,7 +98,7 @@
               <h2>Music Director</h2>
               <p>Looking for an arrangement of ours? Trying to sell us an arrangement? Want to tell us how awesome we sound? Tim's your man. Shoot him an email at <a href="mailto:timking@gwmail.gwu.edu">timking@gwmail.gwu.edu</a></p>
               
-              <!--<p><a class="btn btn-default" href="http://getbootstrap.com/examples/offcanvas/#" role="button">View details »</a></p>-->
+              <!--<p><a class="btn btn-default" href="http://getbootstrap.com/examples/offcanvas/#" role="button">View details </a></p>-->
             </div><!--/span-->
             <div class="col-6 col-sm-6 col-lg-4">
               <h2>Business Manager</h2>

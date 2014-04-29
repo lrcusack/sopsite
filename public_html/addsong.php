@@ -27,8 +27,7 @@
     $name = $singer['singer_name']
 
     ?>
-
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <!-- saved from url=(0050)http://getbootstrap.com/examples/navbar-fixed-top/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -38,7 +37,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="http://getbootstrap.com/docs-assets/ico/favicon.png">
 
-    <title>About Us</title>
+    <title>Add Song</title>
 
     <!-- Bootstrap core CSS -->
     <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
@@ -72,7 +71,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-             <li><a href="aboutus.php">About us</a></li>
+            <li><a href="aboutus.php">About us</a></li>
            <li><a href="events.php">Performance Schedule</a></li>
            <li><a href="./contactus.php">Contact us</a></li>
            <li><a href="currentsons.php">Current Sons</a></li>
@@ -88,28 +87,34 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h1>History of SOP</h1>
-        <img src="./SOP_files/logo.jpg" alt="SOP Logo" class="center-block img-responsive">
-        <p><br>Sons of Pitch, like most of Western Europe, was formed in the wake of the Treaty of Westphalia. Bound to the ideology of the Magna Carta, Sons of Pitch continues to respect human rights globally. U2's Bono--a close friend of Scott Sobelman--has helped with SOP's campaign for global AIDS alleviation, while Michael Jackson helped in the mission to save the world and save the children.
-			</p>
-			<p>Sons of Pitch, however, is no one-trick dog. While campaignign for perpetual global justice, they have been developing a repertoire of both original compositions and tribute songs that reads like a what's-what of contemporary music. Sons of Pitch members have been included in the songwriter's credits on such tunes as: the Jazz standard the Nearness of You, cultural staple Hava Negila, Anthrax's touching ballad Spreading the Disease, and even Biggie's Mo' Money Mo' Problems--how true it is. Sons of Pitch can be found performing their repertoire around the Foggy Bottom campus of the George Washington University. They would like to expand their geographical basis, but bass Ryan Geist has become too preoccupied with the college freshman to situate himself anywhere else. He keeps getting older but the girls stay the same age.
-			</p>
-			<p>Like any group, SOP is not unfamiliar to awkward transitions. Recently, Sons of Pitch were forced to succumb to personal interest differences and substitute their blood thirsty, battle axe wielding bass for a compassionate womanizer with the same low register. But don't you think for a moment that SOP will take a step backwards because of it! Sons of Pitch is recovering and recruiting new members. Now composed of 15 of the world's most powerful men--although Condi wouldn't accept our invitation to audition--Sons of Pitch is spreading its ideologies and influences globally.
-			</p>
-			<p>Look for Evan Shyer's upcoming book: Thrash Metal & Human Rights: What it Means to be a Compassionate and Caring Individual. His other publications include: The Decline of Western Civilization: Pop Music's Hegemony, and Bach and Haydn Licked the Balls of Megadeth.
-			</p>
-			<p>To life, music, and cultural sensitivity!</p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="https://www.facebook.com/pages/Sons-of-Pitch/7985174993?sk=info" role="button">Check us out on the Facebook </a>
-        </p>
+        <h1>Add Song</h1>
+        <p><br>Arranged a song? Put details here so once you've learned it you can assign parts</p>
+        <p><form action="addsongprocess.php" method="post">
+				<div style="text-align: center;">Song Title <input name="title" type="text"><br>
+				<br>
+				Part1<input name ="p1" type = "text"><br><br>
+				Part2<input name ="p2" type = "text"><br><br>
+				Part3<input name ="p3" type = "text"><br><br>
+				Part4<input name ="p4" type = "text"><br><br>
+				Part5<input name ="p5" type = "text"><br><br>
+				Part6<input name ="p6" type = "text"><br><br>
+				Part7<input name ="p7" type = "text"><br><br>
+				Part8<input name ="p8" type = "text"><br><br>
+				Part9<input name ="p9" type = "text"><br><br>
+				Part10<input name ="p10" type = "text"><br><br>
+
+				
+				<input value="Add Song" type="submit"></div>
+			</form>
+		</p>
       </div>
 
     </div> <!-- /container -->
 
 	<!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="">Back to top</a></p>
-        <p>Sons of Pitch · <a href="singersignin.php">Singer Sign-in</a></p>
+        <p class="pull-right"><a href="./index.html">Back to top</a></p>
+        <p>Sons of Pitch · <a href="">Singer Sign-in</a></p>
       </footer>
 
 

@@ -2,7 +2,7 @@
 <?php session_start(); //continue session
     $currentUser=$_SESSION['username'];
     $currentID=$_SESSION['currentUserID'];
-    if(!$currentID){header("Location: index.html");exit;}
+    //if(!$currentID){header("Location: index.html");exit;}
     //connect to database
     $conn = mysql_connect("localhost","lrcusack","S3Cr3T.228");
     if (!$conn)

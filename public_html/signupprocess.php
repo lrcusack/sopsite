@@ -4,7 +4,7 @@
 	<?php 
 	
         //start session, initialize user variables, connect to database
-		//session_start();
+		session_start();
 		$impath = "uploads/" . $_FILES["file"]["name"];
 		$acode = $_POST['acode'];
 		$username = $_POST['username'];

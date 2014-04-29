@@ -14,21 +14,15 @@
 	{echo "Unable to find database: " . mysql_error();
 	exit;}
     
+	$songid = $_POST['songid'];
+	$singerid = $_POST['singerid'];
+	
+	$query1 = "INSERT INTO sings (song_id,singer_id) VALUES ('$songid','$singerid');";
 
-		$eid = $_POST['eid'];
-
-		
-				
-                if(!isset($eid))
-                {echo 'Invalid event, please try again <a href="monitorevents.php">try again</a>';
-                exit;}                
-
-                $query1 = "INSERT INTO attending (perf_id,singer_id) VALUES ('$eid','$currentID');";
-
-					$result1 = mysql_query($query1);
+	$result1 = mysql_query($query1);
 					
             
             // */
-            header('Location: events.php');
+            header('Location: singerhome.php');
               
 	?>

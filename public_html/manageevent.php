@@ -112,9 +112,29 @@
 				
 				
 				while ($row = mysql_fetch_assoc($result1)) {
-					//eventually make it so events only appear if not already attending
+					
 					echo $row['singer_name'];
 				}
+				echo '</p><p><h3>Possible Set List</h3>';
+				if (!$result) 
+				{
+					echo "Query failure: " . mysql_error(); 
+					exit;
+				}
+				
+				$query3 = 'SELECT title
+									FROM (song so LEFT JOIN requires r ON so.song_id=r.song_id) x 
+								LEFT JOIN 
+									(SELECT voicepart, si.singer_id 
+										FROM ((sings si LEFT JOIN attending a ON a.singer_id=si.singer_id and a.perf_id=$eid) y 
+								ON x.voicepart = y.voicepart) z
+							WHERE z.singer_id IS NOT NULL);';
+				$result3 = mysql_query($query3);
+				while ($row = mysql_fetch_assoc($result1)) {
+					echo $row['title'];
+				}
+
+
 				
 				echo '</p><p><h3>Manage</h3>
 				

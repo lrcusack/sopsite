@@ -96,30 +96,30 @@
             <div class="col-6 col-sm-6 col-lg-4">
               <h2>Event Creation</h2>
               <p>Planning an event? Click here and set up an event that other Sons can chose to attend!</p>
-              <p><a class="btn btn-default" href="createperformance.php" role="button">Create Event »</a></p>
+              <p><a class="btn btn-default" href="createperformance.php" role="button">Create Event </a></p>
               
             </div><!--/span-->
             <div class="col-6 col-sm-6 col-lg-4">
               <h2>Monitor Events</h2>
               <p>Want to check an event's status or select events you can attend? Click here to view which singers are attending which events!</p>
-              <p><a class="btn btn-default" href="monitorevent.php" role="button">Event Management »</a></p>
+              <p><a class="btn btn-default" href="monitorevent.php" role="button">Event Management </a></p>
             </div><!--/span-->
             <div class="col-6 col-sm-6 col-lg-4">
               <h2>Add Content</h2>
               <p>Have you arranged a song or recorded a performance? Click the apppropriate link below to host it on this website!</p>
-              <p><a class="btn btn-default" href="submitsheetmusic.html" role="button">Submit sheet music »</a></p>
-              <p><a class="btn btn-default" href="submitvideo.html" role="button">Submit video »</a></p>
+              <p><a class="btn btn-default" href="submitsheetmusic.html" role="button">Submit sheet music </a></p>
+              <p><a class="btn btn-default" href="submitvideo.html" role="button">Submit video </a></p>
             </div><!--/span-->
             <div class="col-6 col-sm-6 col-lg-4">
               <h2>Download Sheet Music</h2>
               <p>Click here to find a listing of all downloadable sheet music in pdf format</p>
-              <p><a class="btn btn-default" href="sheetmusic.html" role="button">Download Sheet Music »</a></p>
+              <p><a class="btn btn-default" href="sheetmusic.html" role="button">Download Sheet Music </a></p>
             </div><!--/span-->
             <div class="col-6 col-sm-6 col-lg-4">
               <h2>Account Management</h2>
               <p>Click here to change your public SOP profile or add a new singer!</p>
-              <p><a class="btn btn-default" href="editprofile.php" role="button">Edit Profile »</a></p>
-              <p><a class="btn btn-default" href="newsinger.php" role="button">New Singer »</a></p>
+              <p><a class="btn btn-default" href="editprofile.php" role="button">Edit Profile </a></p>
+              <p><a class="btn btn-default" href="newsinger.php" role="button">New Singer </a></p>
             </div><!--/span-->
           </div><!--/row-->
         </div><!--/span-->
